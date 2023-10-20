@@ -18,7 +18,7 @@ app.all('/', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`分词 app listening at http://localhost:${port}/www/main.html`)
 })
 var nodejieba = require("nodejieba");
 var topN = 20;
@@ -30,7 +30,7 @@ nodejieba.load({
   stopWordDict: nodejieba.DEFAULT_STOP_WORD_DICT,
 });
 
-require("./page")
+// require("./page")
 // var result= nodejieba.extract(`我爱你彼岸花`, topN)
 
 // console.log(result)

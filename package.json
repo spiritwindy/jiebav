@@ -1,12 +1,15 @@
 {
-  "name": "jieba-service",
-  "version": "1.0.0",
-  "description": "",
+  "name": "jiebav",
+  "version": "1.0.1",
+  "description": "jieba分词的web app",
   "main": "app.js",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "nodejieba": "^2.5.1"
+  },
+  "bin": {
+    "jiebav": "jiebav"
   },
   "devDependencies": {},
   "scripts": {
