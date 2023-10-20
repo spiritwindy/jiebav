@@ -3,12 +3,13 @@ const express = require('express')
 const app = express()
 const port = 800
 const cors = require("cors");  //引入cors模块
+
+const path = require("path")
 app.use(cors());  //使用cors中间件
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(bodyParser.json()); // for parsing application/json
-app.use("/www", express.static("./public"))
-
+app.use("/www", express.static(path.resolve(__dirname, "./public")))
 
 app.all('/', (req, res) => {
   // res.send('Hello World!')
