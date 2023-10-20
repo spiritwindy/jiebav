@@ -1,6 +1,6 @@
 {
   "name": "jiebav",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "jieba分词的web app",
   "main": "app.js",
   "dependencies": {
