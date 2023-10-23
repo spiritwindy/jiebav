@@ -1,7 +1,7 @@
 const express = require('express')
 
 const app = express()
-const port = 800
+const port = 8000
 const cors = require("cors");  //引入cors模块
 
 const path = require("path")
