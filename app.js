@@ -13,6 +13,7 @@ app.use("/www", express.static(path.resolve(__dirname, "./public")))
 
 app.all('/', (req, res) => {
   // res.send('Hello World!')
+  console.log(req.body.text)
   var result = nodejieba.extract(req.body.text, topN)
   console.log(result)
   res.send(result);
