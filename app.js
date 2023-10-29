@@ -9,6 +9,17 @@ app.use(cors());  //使用cors中间件
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(bodyParser.json()); // for parsing application/json
+
+/* app.use(function (req, res, next) {
+  // getClientIp(req)
+  console.log(
+    'x-forwarded-for', req.headers['x-forwarded-for'],
+    "req.ip", req.protocol+ req.ip,
+    "\nreq.socket.remoteAddress", req.socket.remoteAddress+":"+ req.socket.remotePort);
+  next()
+})
+ */
+
 app.use("/www", express.static(path.resolve(__dirname, "./public")))
 
 app.all('/', (req, res) => {
