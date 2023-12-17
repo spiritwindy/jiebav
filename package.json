@@ -6,15 +6,22 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "nodejieba": "^2.5.1"
+    "nodejieba": "github:spiritwindy/nodejieba"
   },
   "bin": {
     "jiebav": "jiebav"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "electron": "27.1.3",
+    "electron-builder": "^24.9.1"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-packager . jiebav --platform=win32 --arch=x64 --out=release-builds   --overwrite",
+    "dist": "electron-builder .  --platform=win32 --arch=x64 ",
+    "mm": "electron-builder  --prepackaged ./release-builds/YourAppName-win32-x64  "
+  },
+  
   "author": "",
   "license": "ISC"
 }

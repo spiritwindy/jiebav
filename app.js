@@ -43,8 +43,7 @@ nodejieba.load({
   stopWordDict: nodejieba.DEFAULT_STOP_WORD_DICT,
 });
 
-// require("./page")
-// var result= nodejieba.extract(`我爱你彼岸花`, topN)
+require("./page")
 
 // console.log(result)
 // fetch("http://127.0.0.1:800",{})-

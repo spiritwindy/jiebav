@@ -14,7 +14,7 @@ function createWindow() {
     })
 
     // 加载主文件
-    mainWindow.loadURL("http://localhost:800/www/main.html")
+    mainWindow.loadURL("http://localhost:8000/www/main.html")
 }
 
 app.whenReady().then(() => {
