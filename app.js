@@ -42,8 +42,8 @@ nodejieba.load({
   idfDict: nodejieba.DEFAULT_IDF_DICT,
   stopWordDict: nodejieba.DEFAULT_STOP_WORD_DICT,
 });
-
-require("./page")
+if(process.platform === 'win32')
+  require("./page")
 
 // console.log(result)
 // fetch("http://127.0.0.1:800",{})-
