@@ -22,7 +22,7 @@ app.use(bodyParser.json()); // for parsing application/json
 
 app.use("/www", express.static(path.resolve(__dirname, "./public")))
 
-app.all('/', (req, res) => {
+app.all('/text', (req, res) => {
   // res.send('Hello World!')
   console.log(req.body.text)
   var result = nodejieba.extract(req.body.text, topN)

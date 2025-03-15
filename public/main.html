@@ -23,7 +23,7 @@
         async function show(params) {
                 let d = document.querySelector("#text").value
 
-                var w = await fetch("/", {
+                var w = await fetch("/text", {
                     method: "post",
                     mode: "cors",
                     body: JSON.stringify({
