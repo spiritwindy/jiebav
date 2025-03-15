@@ -6,7 +6,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "nodejieba": "github:spiritwindy/nodejieba"
+    "nodejieba": "git+https://github.com/spiritwindy/nodejieba.git"
   },
   "bin": {
     "jiebav": "jiebav"
